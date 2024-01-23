@@ -143,4 +143,3 @@ lista.innerHTML ="";
 lista.appendChild(listaVerduras);
 lista.appendChild(listaFrutas);
 
-prueba
