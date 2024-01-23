@@ -142,3 +142,5 @@ let lista = document.getElementById("lista");
 lista.innerHTML ="";
 lista.appendChild(listaVerduras);
 lista.appendChild(listaFrutas);
+
+prueba
