@@ -39,6 +39,7 @@ let padre = document.body;
 let referencia = padre.removeChild(borrar);
 
 //6-Check if the temporary structure exists and is connected to the DOM
+console.log(document.body.contains(borrar));
 console.log(borrar.isConnected);
 
 //7-Connect the temporary structure to the DOM
@@ -50,6 +51,8 @@ let vegatables = document.querySelectorAll("#lista_compra .verdura");
 vegatables.forEach((elemento) => {
     elemento.remove();
 });
+
+
 
 //9-Replace the paragraph of the first article inserted on step 7 with the last paragraph of the document
 /*let primerParrafo = document.querySelector("section:last-of-type p");
@@ -78,6 +81,8 @@ imagen.after(parrafoNuevo);
 let comentarioNuevo = document.createComment("Cometario Antes de Imagen");
 imagen.before(comentarioNuevo);
 
+
+
 //12-Insert a paragraph before the first and after the last child
 let primerHijo = document.body.firstElementChild;
 let ultimoHijo = document.body.lastElementChild;
@@ -102,7 +107,7 @@ primerArticuloInsertado.innerHTML = "Este contenido ha sido reemplazado en el pa
 
 let ultimoArticuloInsertado = referencia.querySelector("article:last-of-type p");
 ultimoArticuloInsertado.innerHTML = "Este parrafo ha sido reemplazado en el paso 14";
-console.log(ultimoArticuloInsertado);
+
 
 
 //15-Insert a descriptive text before the article of the cat
@@ -119,10 +124,9 @@ seccionAnimales.after(mensajeGatos);
 
 //17-Replace the mixed shopping list with two lists: one for vegetables and one for fruits
 
-console.log(vegatables);
 
 let fruits = document.querySelectorAll(".fruta");
-console.log(fruits);
+
 
 let listaVerduras = document.createElement("ul");
 let listaFrutas = document.createElement("ul");
@@ -135,8 +139,6 @@ fruits.forEach((fruta) =>{
     listaFrutas.appendChild(fruta);
 })
 
-console.log(listaVerduras);
-console.log(listaFrutas);
 
 let lista = document.getElementById("lista");
 lista.innerHTML ="";
