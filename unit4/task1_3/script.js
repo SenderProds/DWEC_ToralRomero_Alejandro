@@ -55,7 +55,7 @@ vegatables.forEach((elemento) => {
 
 
 //9-Replace the paragraph of the first article inserted on step 7 with the last paragraph of the document
-/*let primerParrafo = document.querySelector("section:last-of-type p");
+let primerParrafo = document.querySelector("section:last-of-type p");
 
 let parrafos = document.querySelectorAll("section:last-of-type p:last-of-type");
 let ultimoParrafo = parrafos[parrafos.length - 1];
@@ -65,7 +65,7 @@ padre = document.body;
 console.log(ultimoParrafo);
 console.log(primerParrafo);
 
-padre.replaceChild(ultimoParrafo, primerParrafo);*/
+padre.replaceChild(ultimoParrafo, primerParrafo);
 
 //10-Insert a paragraph after any image with the name of the file
 
