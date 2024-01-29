@@ -37,7 +37,7 @@ class manejador {
         console.log("Texto Aleatorio");
     }
 
-    
+
     onclick(event) {
         this[event.target.dataset.accion]();
     }
@@ -52,7 +52,7 @@ let caja = document.getElementById("box");
 let btn = document.getElementById("btn_caja");
 
 btn.addEventListener("click", (e) => {
-    caja.classList.add("hidden");
+    caja.style.display = "none";
 });
 
 
