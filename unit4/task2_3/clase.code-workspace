@@ -8,7 +8,7 @@
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "2DAW",
+		"liveServer.settings.multiRootWorkspaceName": "htdocs",
 		"cSpell.enableFiletypes": [
 			"!javascript",
 			"!json",
