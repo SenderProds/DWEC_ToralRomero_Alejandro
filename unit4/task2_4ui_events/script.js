@@ -18,26 +18,23 @@ input.addEventListener("input", (e) =>{
     replica.value += e.data;
 });
 
+
+
 //Make a infinity scroll webpage. Clues:
-
-
 let html = document.querySelector("html");
 
 window.addEventListener("scroll", (e) => {
+    let rect = document.body.getBoundingClientRect();
 
-
-    
-    
-        document.body.style.height = document.body.scrollHeight + 5 + "px";
-    
-    console.log(window.scrollY);
-    console.log(document.body.scrollHeight);
+    document.body.style.height = rect.height+ 10 + "px";
+    console.log(`Altura de la pagina --> ${document.body.scrollHeight}px`);
     
 });
 
 
 
 
+//Create a paragraph you can write on when clicking on it
 let parrafoClick = document.getElementById('click');
 
 parrafoClick.addEventListener("click", (e) =>{
@@ -50,6 +47,7 @@ parrafoClick.addEventListener("click", (e) =>{
         console.log(e.key);
     });
 });
+
 
 
 

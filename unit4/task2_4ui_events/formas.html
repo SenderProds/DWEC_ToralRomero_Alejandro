@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcular Superficie</title>
+    <script src="formas.js" defer></script>
+  </head>
+  <body>
+    <h1>Calcular Superficie</h1>
+
+    <section id="contenido">
+      <form id="formas">
+        <label for="formas">Seleccione la forma geométrica :</label>
+        <select name="formas" id="seleccionFormas" required>
+          <option value="rectangulo">Rectángulo</option>
+          <option value="cuadrado">Cuadrado</option>
+          <option value="triangulo">Triangulo</option>
+          <option value="circulo">Circulo</option>
+        </select>
+
+        <input type="submit" value="Continuar" />
+      </form>
+    </section>
+
+    <section id="resultado"></section>
+  </body>
+</html>
