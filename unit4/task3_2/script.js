@@ -1,7 +1,7 @@
 //Open a new window with a random URL. Change its URL once opened
 
 let url = "http://localhost";
-let ventana = window.open(url, "_blank");
+let ventana = window.open(url);
 
 
 setTimeout(() => {
@@ -18,8 +18,8 @@ setTimeout(() => {
 //Print informatino about the URL: protocol, hostname, host and port
 
 setTimeout(() => {
-  console.log(`Protocolo --> ${ventana.location.protocol}`);
-  console.log(`Hostname --> ${ventana.location.hostname}`);
-  console.log(`Host --> ${ventana.location.host}`);
-  console.log(`Puerto --> ${ventana.location.port}`);
+  console.log(`Protocolo --> ${location.protocol}`);
+  console.log(`Hostname --> ${location.hostname}`);
+  console.log(`Host --> ${location.host}`);
+  console.log(`Puerto --> ${location.port}`);
 }, 3000);
