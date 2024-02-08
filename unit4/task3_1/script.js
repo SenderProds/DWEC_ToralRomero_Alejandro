@@ -1,5 +1,5 @@
 //Open a new window having previously asked the user for the URL. It must take 4 seconds to open it.
-let url = prompt("Ingrese la url", "https://setusender.com");
+let url = prompt("Ingrese la url");
 let windowsId;
 
 //Resize the previously opened window, having previously asked the user for the new size
@@ -38,7 +38,7 @@ if (segundos) {
 }
 
 function mostrarSegundos(contenedor) {
-  contenedor.innerHTML = `${segundos} segundos;`;
+  contenedor.innerHTML = `${segundos} segundos`;
   if (segundos > 0) {
     segundos--;
   } else {
