@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 3_5</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <section id="btn">
+      <article>
+        <button id="btnRegistro">Registrarse</button>
+        <button id="btnLogin">Login</button>
+      </article>
+    </section>
+
+    <section id="register" class="dp-none">
+      <form>
+        <p>Información Personal</p>
+        <hr />
+        <fieldset>
+          <label for="name">Nombre: </label>
+          <input type="text" name="name" id="name" required />
+
+          <label for="age">Edad: </label>
+          <input type="number" name="age" id="age" min="1" required />
+
+          <label for="sex">Sexo: </label>
+          <select name="sex" id="sex">
+            <option value="m">M</option>
+            <option value="f">F</option>
+          </select>
+        </fieldset>
+
+        <p>Preferencias de color</p>
+        <hr />
+        <fieldset>
+          <label for="color">Elige un color: </label>
+          <select name="color" id="color">
+            <option value="red">Red</option>
+            <option value="blue">Azul</option>
+            <option value="green">Verde</option>
+            <option value="pink">Rosa</option>
+            <option value="yellow">Amarillo</option>
+          </select>
+        </fieldset>
+
+        <p>Preferencias de Idioma</p>
+        <hr />
+        <fieldset>
+          <label for="language">Idioma: </label>
+          <select name="language" id="language">
+            <option value="es">Español</option>
+            <option value="en">Ingles</option>
+          </select>
+        </fieldset>
+
+        <hr />
+        <input type="button" value="Registrarse" />
+      </form>
+    </section>
+
+    <section id="login">
+      <form>
+        <label for="nameLogin">Nombre: </label>
+        <input type="text" name="nameLogin" id="nameLogin" />
+        <input type="button" value="Acceder" />
+      </form>
+    </section>
+
+    <section id="main" class="dp-none"></section>
+  </body>
+</html>
