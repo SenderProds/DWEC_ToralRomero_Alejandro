@@ -13,6 +13,7 @@ btnRegistro.addEventListener("click", (e) => {
   seccionRegistro.classList.remove("dp-none");
 });
 
+
 btnRegistroForm.addEventListener("click", (e) => {
   let name = document.getElementById("name").value;
   let age = document.getElementById("age").value;
@@ -24,6 +25,7 @@ btnRegistroForm.addEventListener("click", (e) => {
     guardarEnAlmacenamiento(name, age, sex, color, language);
     seccionPrincipal.classList.remove("dp-none");
     seccionRegistro.classList.add('dp-none');
+    saludar(name);
   } else {
     alert("Tienes que rellenar todos los campos");
   }
@@ -53,19 +55,25 @@ btnLoginForm.addEventListener('click', (e) => {
 
 
 function guardarEnAlmacenamiento(name, age, sex, color, language) {
-    localStorage.setItem("name", name);
-    localStorage.setItem("age", age);
-    localStorage.setItem("sex", sex);
-    localStorage.setItem("color", color);
-    localStorage.setItem("language", language);
+    let informacion = {
+        "name": name,
+        "age": age,
+        "sex": sex,
+        "color": color,
+        "language": language
+    }
+
+    localStorage.setItem("sesion", JSON.stringify(informacion));
+    
 }
 
 
 function saludar(name){
-    let language = localStorage.getItem('language');
-
+    let objetoAlmacenado = JSON.parse(localStorage.getItem('sesion'));
+    console.log(objetoAlmacenado);
+    console.log(objetoAlmacenado['color']);
     seccionPrincipal.classList.remove('dp-none');
-    document.body.style.backgroundColor = localStorage.getItem('color');
+    document.body.style.backgroundColor = objetoAlmacenado.color;
     
     if(language == 'es'){
         seccionPrincipal.innerHTML = `<p>Bienvenid@ ${name} </p>`;
@@ -75,9 +83,11 @@ function saludar(name){
     
 }
 
-function comprobarNombre(name){
-    let nombreAlmacenado = localStorage.getItem('name');
-    if(name == nombreAlmacenado){
+function comprobarNombre(nombre){
+    let objeto = JSON.parse(localStorage.getItem('sesion'));
+    
+    
+    if(nombre == objeto.name){
         return true;
     }else{
         return false;
