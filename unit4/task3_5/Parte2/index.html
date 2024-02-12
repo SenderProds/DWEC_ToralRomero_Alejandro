@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entradas</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <button id="agregar">Agregar Entrada</button>
+      <button id="recuperar">Recuperar Entradas</button>
+    </header>
+    <form class="dp-none" id="form" hidden>
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" id="nombre" />
+
+      <label for="text">Texto</label>
+      <input type="text" name="text" id="text" />
+
+      <input type="button" value="Agregar" id="btnSubmit" />
+    </form>
+
+    <section id="contenido"></section>
+  </body>
+</html>

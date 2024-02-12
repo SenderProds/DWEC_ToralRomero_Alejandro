@@ -8,12 +8,17 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+
     <section id="btn">
       <article>
         <button id="btnRegistro">Registrarse</button>
         <button id="btnLogin">Login</button>
+        <button id="cerrarSesion" class="dp-none">Cerrar Session</button>
+        <button id="preferencias" class="dp-none">Preferencias</button>
+        <button id="eliminarSesion" class="dp-none">Eliminar Sesión</button>
       </article>
     </section>
+
 
     <section id="register" class="dp-none">
       <form>
@@ -57,11 +62,12 @@
         </fieldset>
 
         <hr />
-        <input type="button" value="Registrarse" />
+        <input type="button" value="Continuar" />
       </form>
     </section>
 
-    <section id="login">
+
+    <section id="login" class="dp-none">
       <form>
         <label for="nameLogin">Nombre: </label>
         <input type="text" name="nameLogin" id="nameLogin" />
