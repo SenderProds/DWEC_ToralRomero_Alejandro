@@ -53,7 +53,7 @@ btnLoginForm.addEventListener('click', (e) => {
 });
 
 
-
+//Guardar
 function guardarEnAlmacenamiento(name, age, sex, color, language) {
     let informacion = {
         "name": name,
