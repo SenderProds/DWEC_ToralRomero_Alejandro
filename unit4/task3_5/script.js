@@ -51,7 +51,7 @@ btnLoginForm.addEventListener('click', (e) => {
 });
 
 
-
+//giardar
 function guardarEnAlmacenamiento(name, age, sex, color, language) {
     localStorage.setItem("name", name);
     localStorage.setItem("age", age);
