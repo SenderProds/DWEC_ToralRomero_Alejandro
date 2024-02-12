@@ -67,7 +67,7 @@ function guardarEnAlmacenamiento(name, age, sex, color, language) {
     
 }
 
-
+//C
 function saludar(name){
     let objetoAlmacenado = JSON.parse(localStorage.getItem('sesion'));
     console.log(objetoAlmacenado);
