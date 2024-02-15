@@ -22,9 +22,11 @@ info.then((response) => {
             let h2_name = document.createElement('h2');
             let p_age = document.createElement('p');
             let ul_powers = document.createElement('ul');
+            let p_lista = document.createElement('p');
 
             h2_name.innerHTML = member.name;
             p_age.innerHTML = `Age: ${member.age}`;
+            p_lista.innerHTML = "Powers: ";
             member.powers.forEach((power) => {
                 let li = document.createElement('li');
                 li.innerHTML = power;
@@ -33,6 +35,7 @@ info.then((response) => {
 
             article.appendChild(h2_name);
             article.appendChild(p_age);
+            article.appendChild(p_lista);
             article.appendChild(ul_powers);
             article.style.border = "solid 1px black";
             article.style.margin = "5px";
